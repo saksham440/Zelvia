@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelvia - Premium Shopping Experience | Quality Products from Trusted Brands</title>
+    <meta name="description" content="Discover premium quality products at Zelvia. Shop from curated categories including fashion, electronics, beauty, home & kitchen, and more from trusted brands worldwide.">
+    <meta name="keywords" content="zelvia, online shopping, fashion, electronics, beauty, home kitchen, premium products, trusted brands">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Zelvia - Premium Shopping Experience">
+    <meta property="og:description" content="Discover premium quality products from trusted brands worldwide">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/og-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 data-testid="text-logo">Zelvia</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" data-testid="link-nav-home">Home</a>
+                    <div class="nav-dropdown">
+                        <a href="#categories" data-testid="link-nav-categories">
+                            Categories <i data-lucide="chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#mens-fashion" data-testid="link-dropdown-mens-fashion">Men's Fashion</a>
+                            <a href="#womens-fashion" data-testid="link-dropdown-womens-fashion">Women's Fashion</a>
+                            <a href="#electronics" data-testid="link-dropdown-electronics">Electronics & Gadgets</a>
+                            <a href="#accessories" data-testid="link-dropdown-accessories">Fashion & Accessories</a>
+                            <a href="#home-kitchen" data-testid="link-dropdown-home-kitchen">Home & Kitchen</a>
+                            <a href="#beauty" data-testid="link-dropdown-beauty">Beauty & Personal Care</a>
+                        </div>
+                    </div>
+                    <a href="#offers" data-testid="link-nav-offers">Offers</a>
+                    <a href="#contact" data-testid="link-nav-contact">Contact Us</a>
+                    <a href="#support" data-testid="link-nav-support">Support</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" data-testid="button-mobile-menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Search Bar -->
+        <div class="mobile-search">
+            <div class="search-container">
+                <input type="text" placeholder="Search products, categories..." class="search-input" data-testid="input-mobile-search">
+                <i data-lucide="search" class="search-icon"></i>
+                <div class="search-results" id="mobile-search-results"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <h1 data-testid="text-mobile-logo">Zelvia</h1>
+            <button class="mobile-nav-close" data-testid="button-close-mobile-menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="#home" data-testid="link-mobile-home">Home</a>
+            <a href="#categories" data-testid="link-mobile-categories">Categories</a>
+            <a href="#offers" data-testid="link-mobile-offers">Offers</a>
+            <a href="#contact" data-testid="link-mobile-contact">Contact Us</a>
+            <a href="#support" data-testid="link-mobile-support">Support</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-testid="text-hero-title">
+                    Premium Quality, Unbeatable Prices
+                </h1>
+                <p class="hero-subtitle" data-testid="text-hero-subtitle">
+                    Trusted by thousands worldwide. Zelvia offers authentic products from verified brands with guaranteed quality, secure payments, and 24/7 customer support. Join over 50,000+ satisfied customers who trust us for their shopping needs.
+                </p>
+                
+                <!-- Desktop Search Bar -->
+                <div class="hero-search desktop-only">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search products, categories..." class="search-input" data-testid="input-hero-search">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <div class="search-results" id="hero-search-results"></div>
+                    </div>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i data-lucide="shield"></i>
+                        <span data-testid="text-trust-secure">Secure Payments</span>
+                    </div>
+                    <div class="trust-item">
+                        <i data-lucide="truck"></i>
+                        <span data-testid="text-trust-delivery">Fast Delivery</span>
+                    </div>
+                    <div class="trust-item">
+                        <i data-lucide="rotate-ccw"></i>
+                        <span data-testid="text-trust-returns">30-Day Returns</span>
+                    </div>
+                    <div class="trust-item">
+                        <i data-lucide="star" class="golden-star"></i>
+                        <span data-testid="text-trust-reviews">5-Star Reviews</span>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-testid="button-shop-now">Shop Now</button>
+                    <button class="btn btn-secondary" data-testid="button-view-offers">View Offers</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Zelvia Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Zelvia?</h2>
+            <p class="section-description">
+                We're committed to providing you with the best shopping experience through quality products and exceptional service. 
+                Our carefully curated categories feature premium quality products from trusted brands worldwide, ensuring you find exactly what you're looking 
+                for their shopping needs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="text-categories-title">Shop by Category</h2>
+                <p class="section-description" data-testid="text-categories-subtitle">
+                    Explore our carefully curated categories featuring premium quality products from trusted brands worldwide.
+                </p>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Men's Fashion -->
+                <div class="category-card" id="mens-fashion" data-testid="card-category-mens-fashion">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Men's Fashion - T-shirts, jeans, sneakers & casual wear" 
+                         data-testid="img-category-mens-fashion">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-mens-fashion">Men's Fashion</h3>
+                        <p data-testid="text-category-description-mens-fashion">T-shirts, jeans, sneakers & casual wear</p>
+                        <a href="https://amzn.to/4lmLHSE" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-mens-fashion">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Women's Fashion -->
+                <div class="category-card" id="womens-fashion" data-testid="card-category-womens-fashion">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Women's Fashion - Dresses, tops, shoes & handbags" 
+                         data-testid="img-category-womens-fashion">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-womens-fashion">Women's Fashion</h3>
+                        <p data-testid="text-category-description-womens-fashion">Dresses, tops, shoes & handbags</p>
+                        <a href="https://amzn.to/3JaxOtt" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-womens-fashion">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Electronics & Gadgets -->
+                <div class="category-card" id="electronics" data-testid="card-category-electronics">
+                    <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Electronics & Gadgets - Latest tech and devices" 
+                         data-testid="img-category-electronics">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-electronics">Electronics & Gadgets</h3>
+                        <p data-testid="text-category-description-electronics">Latest tech devices & accessories</p>
+                        <a href="https://amzn.to/4lqmnvo" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-electronics">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fashion & Accessories -->
+                <div class="category-card" id="accessories" data-testid="card-category-accessories">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Fashion & Accessories - Watches, jewelry, bags & sunglasses" 
+                         data-testid="img-category-accessories">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-accessories">Fashion & Accessories</h3>
+                        <p data-testid="text-category-description-accessories">Watches, jewelry, bags & sunglasses</p>
+                        <a href="https://amzn.to/3HlnsGM" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-accessories">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Home & Kitchen -->
+                <div class="category-card" id="home-kitchen" data-testid="card-category-home-kitchen">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Home & Kitchen Products - Appliances and essentials" 
+                         data-testid="img-category-home-kitchen">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-home-kitchen">Home & Kitchen Products</h3>
+                        <p data-testid="text-category-description-home-kitchen">Appliances, cookware & home essentials</p>
+                        <a href="https://amzn.to/3UsK1MC" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-home-kitchen">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Beauty & Personal Care -->
+                <div class="category-card" id="beauty" data-testid="card-category-beauty">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Beauty & Personal Care - Skincare, makeup & wellness products" 
+                         data-testid="img-category-beauty">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-beauty">Beauty & Personal Care</h3>
+                        <p data-testid="text-category-description-beauty">Skincare, makeup & wellness products</p>
+                        <a href="https://amzn.to/45wXyrE" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-beauty">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Toys & Games -->
+                <div class="category-card" id="toys" data-testid="card-category-toys">
+                    <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Toys & Games - Fun and educational playtime" 
+                         data-testid="img-category-toys">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-toys">Toys & Games</h3>
+                        <p data-testid="text-category-description-toys">Fun & educational toys for all ages</p>
+                        <a href="https://amzn.to/4lmrpsE" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-toys">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Smartphones Latest -->
+                <div class="category-card" id="smartphones" data-testid="card-category-smartphones">
+                    <div class="category-badge" data-testid="badge-smartphones">NEW</div>
+                    <img src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Smartphones Latest - Newest models & mobile accessories" 
+                         data-testid="img-category-smartphones">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-smartphones">Smartphones Latest</h3>
+                        <p data-testid="text-category-description-smartphones">Newest models & mobile accessories</p>
+                        <a href="https://amzn.to/4oDbtFs" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-smartphones">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Smartwatches -->
+                <div class="category-card" id="smartwatches" data-testid="card-category-smartwatches">
+                    <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Smartwatch New Arrival - Latest wearable tech & fitness trackers" 
+                         data-testid="img-category-smartwatches">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-smartwatches">Smartwatch New Arrival</h3>
+                        <p data-testid="text-category-description-smartwatches">Latest wearable tech & fitness trackers</p>
+                        <a href="https://amzn.to/4fz0uZs" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-smartwatches">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Grocery & Gourmet -->
+                <div class="category-card" id="grocery" data-testid="card-category-grocery">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Grocery & Gourmet Foods - Fresh ingredients and specialty items" 
+                         data-testid="img-category-grocery">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-grocery">Grocery & Gourmet Foods</h3>
+                        <p data-testid="text-category-description-grocery">Fresh ingredients & specialty items</p>
+                        <a href="https://amzn.to/4mdZgW5" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-grocery">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Jewelry -->
+                <div class="category-card" id="jewelry" data-testid="card-category-jewelry">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Jewelry - Elegant pieces and luxury accessories" 
+                         data-testid="img-category-jewelry">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-jewelry">Jewelry</h3>
+                        <p data-testid="text-category-description-jewelry">Elegant pieces & luxury accessories</p>
+                        <a href="https://amzn.to/4opTDW6" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-jewelry">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Books & e-Books -->
+                <div class="category-card" id="books" data-testid="card-category-books">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Books & e-Books - Bestselling authors and popular novels" 
+                         data-testid="img-category-books">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-books">Books & e-Books</h3>
+                        <p data-testid="text-category-description-books">Bestselling authors & popular novels</p>
+                        <a href="https://amzn.to/45P6tWw" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-books">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Festive Items -->
+                <div class="category-card" id="festive" data-testid="card-category-festive">
+                    <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Festive Items - Christmas decorations, Santa hat, gift boxes, ornaments" 
+                         data-testid="img-category-festive">
+                    <div class="category-content">
+                        <h3 data-testid="text-category-name-festive">Festive Items</h3>
+                        <p data-testid="text-category-description-festive">Holiday decorations & celebration items</p>
+                        <a href="https://amzn.to/45yK0fg" target="_blank" rel="noopener noreferrer" 
+                           class="category-link" data-testid="link-category-festive">
+                            Explore Collection <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-indicator" data-testid="trust-indicator-secure-payments">
+                    <div class="trust-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 data-testid="text-trust-title-secure-payments">Secure Payments</h3>
+                    <p data-testid="text-trust-description-secure-payments">100% secure payment processing with industry-leading encryption</p>
+                </div>
+                <div class="trust-indicator" data-testid="trust-indicator-fast-delivery">
+                    <div class="trust-icon">
+                        <i data-lucide="truck"></i>
+                    </div>
+                    <h3 data-testid="text-trust-title-fast-delivery">Fast Delivery</h3>
+                    <p data-testid="text-trust-description-fast-delivery">Quick and reliable delivery to your doorstep</p>
+                </div>
+                <div class="trust-indicator" data-testid="trust-indicator-returns">
+                    <div class="trust-icon">
+                        <i data-lucide="rotate-ccw"></i>
+                    </div>
+                    <h3 data-testid="text-trust-title-returns">30-Day Returns</h3>
+                    <p data-testid="text-trust-description-returns">Hassle-free returns within 30 days of purchase</p>
+                </div>
+                <div class="trust-indicator" data-testid="trust-indicator-reviews">
+                    <div class="trust-icon">
+                        <i data-lucide="star" class="golden-star"></i>
+                    </div>
+                    <h3 data-testid="text-trust-title-reviews">5-Star Reviews</h3>
+                    <p data-testid="text-trust-description-reviews">Thousands of satisfied customers and excellent ratings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="text-reviews-title">What Our Customers Say</h2>
+                <div class="overall-rating">
+                    <div class="stars" data-testid="stars-overall-rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <span class="rating-text" data-testid="text-overall-rating">4.9/5 from 10,000+ reviews</span>
+                </div>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card" data-testid="card-review-sarah-johnson">
+                    <div class="stars" data-testid="stars-review-sarah-johnson">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p data-testid="text-review-content-sarah-johnson">"Amazing quality products and super fast delivery! Zelvia has become my go-to shopping destination."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-name" data-testid="text-reviewer-name-sarah-johnson">Sarah Johnson</div>
+                        <div class="reviewer-title" data-testid="text-reviewer-title-sarah-johnson">Verified Customer</div>
+                    </div>
+                </div>
+
+                <div class="review-card" data-testid="card-review-michael-chen">
+                    <div class="stars" data-testid="stars-review-michael-chen">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p data-testid="text-review-content-michael-chen">"The customer service is exceptional. They helped me find exactly what I was looking for!"</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-name" data-testid="text-reviewer-name-michael-chen">Michael Chen</div>
+                        <div class="reviewer-title" data-testid="text-reviewer-title-michael-chen">Verified Customer</div>
+                    </div>
+                </div>
+
+                <div class="review-card" data-testid="card-review-emily-rodriguez">
+                    <div class="stars" data-testid="stars-review-emily-rodriguez">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p data-testid="text-review-content-emily-rodriguez">"Great prices, authentic products, and reliable service. Highly recommended!"</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-name" data-testid="text-reviewer-name-emily-rodriguez">Emily Rodriguez</div>
+                        <div class="reviewer-title" data-testid="text-reviewer-title-emily-rodriguez">Verified Customer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="section-title" data-testid="text-newsletter-title">Stay Updated with Zelvia</h2>
+            <p class="section-description" data-testid="text-newsletter-subtitle">Get exclusive offers, new product alerts, and shopping tips delivered to your inbox.</p>
+            
+            <form class="newsletter-form" data-testid="form-newsletter">
+                <input type="email" placeholder="Enter your email address" class="newsletter-input" data-testid="input-newsletter-email" required>
+                <button type="submit" class="btn btn-newsletter" data-testid="button-newsletter-subscribe">Subscribe</button>
+            </form>
+            <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 class="footer-logo" data-testid="text-footer-logo">Zelvia</h3>
+                    <p class="footer-description" data-testid="text-footer-description">
+                        Your trusted partner for premium quality products across multiple categories. Shop with confidence, delivered worldwide.
+                    </p>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="user"></i>
+                            <span data-testid="text-contact-name">Saksham</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span data-testid="text-contact-phone">0183 359 3139</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span data-testid="text-contact-email">zelvia080@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-testid="text-footer-quicklinks-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-testid="link-footer-home">About Us</a></li>
+                        <li><a href="#categories" data-testid="link-footer-categories">Privacy Policy</a></li>
+                        <li><a href="#offers" data-testid="link-footer-offers">Terms of Service</a></li>
+                        <li><a href="#support" data-testid="link-footer-support">Shipping Info</a></li>
+                        <li><a href="#support" data-testid="link-footer-returns">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-testid="text-footer-categories-title">Categories</h4>
+                    <ul>
+                        <li><a href="https://amzn.to/4lmLHSE" target="_blank" rel="noopener noreferrer" data-testid="link-footer-category-mens-fashion">Men's Fashion</a></li>
+                        <li><a href="https://amzn.to/3JaxOtt" target="_blank" rel="noopener noreferrer" data-testid="link-footer-category-womens-fashion">Women's Fashion</a></li>
+                        <li><a href="https://amzn.to/4lqmnvo" target="_blank" rel="noopener noreferrer" data-testid="link-footer-category-electronics">Electronics</a></li>
+                        <li><a href="https://amzn.to/45wXyrE" target="_blank" rel="noopener noreferrer" data-testid="link-footer-category-beauty-&-care">Beauty & Care</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4 data-testid="text-footer-social-title">Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" data-testid="link-social-facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" data-testid="link-social-twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" data-testid="link-social-instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" data-testid="link-social-linkedin">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-testid="text-footer-copyright">
+                    &copy; 2024 Zelvia. All rights reserved. Premium Quality, Worldwide Delivery.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget" id="chat-widget" data-testid="chat-widget">
+        <!-- Chat Window -->
+        <div class="chat-window" id="chat-window">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <div class="chat-agent-info">
+                    <div class="agent-avatar">
+                        <i data-lucide="headphones"></i>
+                        <div class="online-indicator"></div>
+                    </div>
+                    <div class="agent-details">
+                        <div class="agent-name" data-testid="text-chat-title">Zelvia Premium Support</div>
+                        <div class="agent-status" data-testid="text-chat-status">
+                            <div class="status-dot"></div>
+                            AI Assistant Online
+                        </div>
+                    </div>
+                </div>
+                <button class="chat-close" data-testid="button-close-chat">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <!-- Chat Body -->
+            <div class="chat-body" data-testid="chat-messages">
+                <div class="chat-message bot-message">
+                    <div class="message-sender">Zelvia AI</div>
+                    <div class="message-content">
+                        Welcome to Zelvia Premium Support. I'm here to assist you with any questions about our products, orders, or services. How may I help you today?
+                    </div>
+                    <div class="message-time">12:00 PM</div>
+                </div>
+
+                <!-- Quick Reply Buttons -->
+                <div class="quick-replies" data-testid="quick-replies">
+                    <button class="quick-reply-btn" data-testid="button-quick-reply-order-assistance">
+                        <i data-lucide="package"></i>
+                        Order Assistance
+                    </button>
+                    <button class="quick-reply-btn" data-testid="button-quick-reply-product-consultation">
+                        <i data-lucide="info"></i>
+                        Product Consultation
+                    </button>
+                    <button class="quick-reply-btn" data-testid="button-quick-reply-exclusive-offers">
+                        <i data-lucide="gift"></i>
+                        Exclusive Offers
+                    </button>
+                    <button class="quick-reply-btn premium-agent-btn" data-testid="button-connect-agent">
+                        <i data-lucide="users"></i>
+                        Premium Live Agent
+                    </button>
+                </div>
+
+                <!-- Typing Indicator -->
+                <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                    <div class="message-sender">Zelvia AI is typing...</div>
+                    <div class="typing-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chat Input -->
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" placeholder="Type your message..." data-testid="input-chat-message">
+                <button class="send-btn" data-testid="button-send-message">
+                    <i data-lucide="send"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Chat Toggle Button -->
+        <button class="chat-toggle" data-testid="button-toggle-chat">
+            <i data-lucide="message-circle"></i>
+        </button>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" data-testid="button-scroll-top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
